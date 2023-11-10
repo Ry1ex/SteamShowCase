@@ -9,9 +9,6 @@ import shutil
 import traceback
 import sys
 
-sys.stdout = open('stdout.log', 'w')
-sys.stderr = open('stderr.log', 'w')
-
 #Thank chatGPT for the traduction and comment
 
 # Custom message box with themed appearance

@@ -10,7 +10,7 @@ echo "Installing dependencies..."
 pip install -r requirements.txt
 
 echo "Generating executable with PyInstaller..."
-pyinstaller --onefile --icon=favicon.ico --add-data "SteamShowCaseLogo.png:." --noconsole SteamShowCase.py
+pyinstaller --onefile --icon=favicon.ico --add-data "SteamShowCaseLogo.png:." --noconsole --distpath . SteamShowCase.py
 
 if [ -f "./dist/SteamShowCase" ]; then
     echo "Executable generated successfully: ./dist/SteamShowCase"
