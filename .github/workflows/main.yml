@@ -23,6 +23,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Install PyInstaller
+      run: |
+        python -m pip install pyinstaller
+
     - name: Build with PyInstaller
       run: pyinstaller --onefile --icon=favicon.ico --add-data "SteamShowCaseLogo.png;." --noconsole --distpath . SteamShowCase.py
 
