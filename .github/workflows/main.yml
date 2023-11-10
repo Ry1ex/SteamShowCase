@@ -28,7 +28,7 @@ jobs:
         python -m pip install pyinstaller
 
     - name: Build with PyInstaller
-      run: pyinstaller --onefile --icon=favicon.ico --add-data "SteamShowCaseLogo.png;." --noconsole --distpath . SteamShowCase.py
+      run: pyinstaller --onefile --icon=favicon.ico --add-data "SteamShowCaseLogo.png:." --noconsole --distpath . SteamShowCase.py
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
