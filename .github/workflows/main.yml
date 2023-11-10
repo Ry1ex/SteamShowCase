@@ -27,3 +27,10 @@ jobs:
           cd $GITHUB_WORKSPACE
           pyinstaller --onefile --icon=favicon.ico --add-data "SteamShowCaseLogo.png:." --noconsole --distpath . SteamShowCase.py
 
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: SteamShowCase-executable
+          path: ./SteamShowCase
+
+
