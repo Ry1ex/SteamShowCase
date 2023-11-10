@@ -30,8 +30,13 @@ jobs:
     - name: Build with PyInstaller
       run: pyinstaller --onefile --icon=favicon.ico --add-data "SteamShowCaseLogo.png:." --noconsole --distpath . SteamShowCase.py
 
+    - name: Copy executable and build directory
+      run: |
+        cp -r dist/* $GITHUB_WORKSPACE/
+        cp -r build/* $GITHUB_WORKSPACE/
+
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
-        name: SteamShowCase
-        path: SteamShowCase.exe
+        name: SteamShowCase.exe
+        path: $GITHUB_WORKSPACE
