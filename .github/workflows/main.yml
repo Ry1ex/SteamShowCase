@@ -32,8 +32,7 @@ jobs:
 
     - name: Copy executable and build directory
       run: |
-        cp -r dist/* $GITHUB_WORKSPACE/
-        cp -r build/* $GITHUB_WORKSPACE/
+        ls -l
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
