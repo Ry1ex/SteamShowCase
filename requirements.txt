@@ -1,0 +1,9 @@
+tkinter
+moviepy
+Pillow
+numpy
+threading
+os
+shutil
+traceback
+sys
