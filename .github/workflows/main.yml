@@ -22,13 +22,8 @@ jobs:
           pip install pyinstaller
           # Autres dépendances à installer si nécessaire
 
-      - name: Build executable
+      - name: Build executable with PyInstaller
         run: |
+          cd $GITHUB_WORKSPACE
           pyinstaller --onefile --icon=favicon.ico --add-data "SteamShowCaseLogo.png:." --noconsole --distpath . SteamShowCase.py
-          # Assurez-vous d'ajuster la commande pyinstaller selon vos besoins
 
-      - name: Upload executable
-        uses: actions/upload-artifact@v2
-        with:
-          name: SteamShowCase-executable
-          path: ./dist/SteamShowCase
