@@ -1,5 +1,6 @@
 moviepy==1.0.3
 Pillow==10.1.0
 numpy==1.26.1
+#There, I'm not sure
 tk
 tkintertable
