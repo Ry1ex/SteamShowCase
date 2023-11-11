@@ -66,13 +66,15 @@ Use SteamShowCase to convert your video file into a GIF.
 - Name GIFs by their number to easily locate them , Exemple : '8-1' (For the 8th gif part 1).
 - Select gif , Exemple 'segment_1.gif'.
 - Inspect element and click on the console tab.
-- Past ``` $J('[name=consumer_app_id]').val(480);$J('[name=file_type]').val(0);$J('[name=visibility]').val(0); ``` and press enter .This is to make Steam believe that it is a workshop object and not an artwork (IMPORTANT).
+- Past ```$J('[name=consumer_app_id]').val(480);$J('[name=file_type]').val(0);$J('[name=visibility]').val(0);``` and press enter .This is to make Steam believe that it is a workshop object and not an artwork (IMPORTANT).
 - Check the box: 'I certify that I am the person who created this content'
 - Click on 'Save and continue'.
 
 <p align="center">
-  <img src="https://github.com/RylexOff/SteamShowCase/blob/main/Resources/Step%202.gif" alt="gif" />
+  <img src="https://github.com/RylexOff/SteamShowCase/blob/main/Resources/Step%203.gif" alt="gif" />
 </p>
+
+### Step 4 : Comming Soon
 
 ## System Requirements
 - Windows 10 or 11
