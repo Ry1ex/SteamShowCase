@@ -27,7 +27,7 @@ Find video game or anime edits on YouTube easily with the following searches:
 - For series: "[Series name] [Character name] edit"
 
 ## How it Works
-SteamShowCase takes a video, converts it into a GIF, segments the GIF into five equal parts, and optimizes each to adhere to Steam's 5MB file size limit. It fine-tunes the GIFs by adjusting frame rates and optionally reducing quality, along with modifying the hex code to remove borders, ensuring a seamless display on your Steam profile.
+SteamShowCase takes a video, converts it into a GIF, segments the GIF into five equal parts, and optimizes each to adhere to Steam's 5MB file size limit. It fine-tunes the GIFs by adjusting frame rates and optionally reducing quality, along with modifying the hex code to remove borders, ensuring a seamless display on your Steam profile. The gif will last maximum 10 seconds
 
   - FPS adjustment: Customize the frame rate according to your preference.
   - Quality control: Choose to maintain quality or reduce file size with an optional quality reduction.
@@ -54,7 +54,7 @@ Use SteamShowCase to convert your video file into a GIF.
 - Click on 'Select Output Folder'.
 - Select your Output folder.
 - Choose your configuration.
-- Click on 'Start'.
+- Click on 'Start'. it may take a minute. The gif will last maximum 10 seconds
 
 <p align="center">
   <img src="https://github.com/RylexOff/SteamShowCase/blob/main/Resources/Step%202.gif" alt="gif" />
