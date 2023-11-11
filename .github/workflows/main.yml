@@ -32,5 +32,3 @@ jobs:
         with:
           name: SteamShowCase.exe
           path: ./SteamShowCase
-
-
