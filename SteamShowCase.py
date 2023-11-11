@@ -2,6 +2,7 @@ from tkinter import Tk, Label, Button, filedialog, ttk, PhotoImage, messagebox, 
 from moviepy.editor import VideoFileClip
 from PIL import Image, ImageSequence, ImageOps
 from io import BytesIO
+import io
 import threading
 import os
 import numpy as np
@@ -9,7 +10,13 @@ import shutil
 import traceback
 import sys
 
-#Thank chatGPT for the traduction and comment
+#Thank chatGPT/Copilot/GoogleTrad for the traduction and comment
+
+# This is a little trick to hide the output of the program and for --noconsole with pyinstaller work
+# C'est un petit truc pour masquer la sortie du programme et pour que --noconsole avec pyinstaller fonctionne
+stream = io.StringIO()
+sys.stdout = stream
+sys.stderr = stream
 
 # Custom message box with themed appearance
 # Boîte de message personnalisée avec apparence thématique
