@@ -128,6 +128,9 @@ class SteamShowcaseApp:
 
         message_label = Label(messagebox, text=message, bg="#333333", fg="#ffffff", font=("Arial", 12))
         message_label.pack(padx=20, pady=20)
+
+        icon_image = PhotoImage(data=image_data)
+        messagebox.iconphoto(False, icon_image)
             
         ok_button = Button(messagebox, text="OK", command=messagebox.destroy, bg="#333333", fg="#ffffff", borderwidth=1, relief="solid", width=15)
         ok_button.pack(pady=10)
