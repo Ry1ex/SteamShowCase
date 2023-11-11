@@ -2,10 +2,16 @@
 ![](Resources/Banner.png)
 
 ## Table of Contents
+- [Exemple](#exemple)
 - [Introduction](#introduction)
 - [How it Works](#how-it-works)
 - [Tutorial](#tutorial)
 - [System Requirements](#system-requirements)
+
+## Exemple
+<p align="center">
+  <img src="https://github.com/RylexOff/SteamShowCase/blob/main/Resources/Preview.gif" alt="gif" />
+</p>
 
 ## Introduction
 SteamShowCase is a software that allows you to convert videos into GIFs and segment them into five parts, to beautify your Steam profile via the Workshop showcase.
@@ -29,7 +35,7 @@ SteamShowCase takes a video, converts it into a GIF, segments the GIF into five 
   - Hex modification: The tool automatically adjusts the hex code of the GIFs to ensure compatibility with Steam's interface.
 
 ## Tutorial
-A step-by-step tutorial will guide you through transforming your video into perfect Steam Workshop GIFs. (GIF tutorial will be inserted here)
+Follow these steps to use SteamShowCase to create gifs and upload on Steam.
 
 ## System Requirements
 - Windows 10 or 11
