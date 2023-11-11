@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#To build the program yourself
 if ! command -v python &>/dev/null; then
     echo "Python is not installed. Installing Python..."
     sudo apt-get update
