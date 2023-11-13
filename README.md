@@ -6,6 +6,7 @@
 - [Introduction](#introduction)
 - [How it Works](#how-it-works)
 - [Tutorial](#tutorial)
+- [How to Compile](#how-to-compile)
 - [System Requirements](#system-requirements)
 
 ## Exemple
@@ -76,8 +77,73 @@ Use SteamShowCase to convert your video file into a GIF.
 
 ### Step 4 : Comming Soon
 
+## How to Compile
+
+If you wish to compile the program yourself, here are the methods:
+
+### Script Version (Easy)
+
+**Note:** You must have Python installed.
+
+Simply launch:
+
+On Linux:
+```bash
+./run.sh
+```
+
+On Windows:
+```batch
+run.bat
+```
+
+### PyInstaller Version with Pre-compiled Bootloader
+
+Install PyInstaller if it's not already installed:
+```bash
+pip install pyinstaller
+```
+
+Then compile the project:
+```bash
+pyinstaller --onefile --icon=favicon.ico --noconsole SteamShowCase.py
+```
+If you encounter an error, specify the path:
+```bash
+YourPATH\python310\Scripts\pyinstaller.exe --onefile --icon=favicon.ico --add-data "SteamShowCaseLogo.png;." --distpath . --noconsole SteamShowCase.py
+```
+
+### PyInstaller Version with Bootloader
+
+Clone the PyInstaller repository or download the development branch as a zip:
+```bash
+git clone https://github.com/pyinstaller/pyinstaller.git
+# Or
+# Download https://github.com/pyinstaller/pyinstaller/archive/refs/heads/develop.zip and extract it into a folder
+```
+
+Navigate to the bootloader directory and build the bootloader:
+```bash
+cd pyinstaller/bootloader
+python ./waf all
+```
+
+Navigate back to the root directory of PyInstaller, uninstall any existing installation, upgrade tools, and install:
+```bash
+cd ..
+pip uninstall pyinstaller
+pip install --upgrade pip setuptools wheel
+sudo pip install .
+```
+
+Finally, compile your project:
+```bash
+cd path/to/SteamShowCase
+pyinstaller --onefile --icon=favicon.ico --noconsole SteamShowCase.py
+```
+
 ## System Requirements
-- Windows 10 or 11
-- I thinks it works on linux
+- Windows 10 or 11 X64
+- I thinks it works on linux with wine
 
 
