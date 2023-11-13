@@ -1,5 +1,6 @@
 # SteamShowCase
 ![](Resources/Banner.png)
+[download link](https://github.com/RylexOff/SteamShowCase/releases/download/1.0.0/SteamShowCase.exe)
 
 ## Table of Contents
 - [Exemple](#exemple)
